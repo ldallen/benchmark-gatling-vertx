@@ -1,0 +1,14 @@
+{
+	"host":"localhost",
+	"port":8090,
+	"controller-packages":["fr.treeptik.controllers"],
+	"domain-packages":"fr.treeptik.domains",
+	"services":
+		{
+			"fr.treeptik.services.TodoService":
+				{
+					"db_name":"vertxBase",
+					"connection_string":"mongodb://localhost:27017/?maxPoolSize=1000"
+				}
+		}
+}

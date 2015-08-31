@@ -1,0 +1,18 @@
+{
+	"host":"localhost",
+	"port":8090,
+	"controller-packages":["fr.treeptik.controllers"],
+	"domain-packages":"fr.treeptik.domains",
+	"services":
+		{
+			"fr.treeptik.services.TodoService":
+				{
+					"url":"jdbc:mysql://localhost:3306/vertxBase",
+					"driver_class":"com.mysql.jdbc.Driver",
+					"user":"root",
+					"password":"root",
+				  	"initial_pool_size":2000,
+					"max_pool_size":2000
+				}
+		}
+}
